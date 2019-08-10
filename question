@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main() 
+{
+	
+	int amount=0,x,p;
+	scanf("%d%d",&x,&p);
+	p=100-p;
+	while(x>0)
+	{
+	    amount=amount+x;
+      x=(p*x)/100;
+	}
+	printf("%d",amount);
+	return 0;
+}
